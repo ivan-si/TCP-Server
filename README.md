@@ -1,10 +1,10 @@
-# Simple TCP Implementation in Python
+# Simple TCP Implementation in C
 
-This repository contains a Python implementation of a simplified Transmission Control Protocol (TCP), built from scratch. The project focuses on the fundamental concepts of reliable data transfer and congestion control, providing a practical understanding of how TCP achieves robustness in network communication.
+This repository contains a C implementation of a simplified Transmission Control Protocol (TCP), built from scratch. The project focuses on the fundamental concepts of reliable data transfer and congestion control, providing a practical understanding of how TCP achieves robustness in network communication.
 
 ## Overview
 
-This implementation provides a working example of a simplified TCP protocol, demonstrating how reliable data transfer and congestion control mechanisms can be built using Python and UDP.  It handles packet loss, out-of-order delivery, and network congestion, offering a clear view into the core workings of TCP.
+This implementation provides a working example of a simplified TCP protocol, demonstrating how reliable data transfer and congestion control mechanisms can be built using C and UDP.  It handles packet loss, out-of-order delivery, and network congestion, offering a clear view into the core workings of TCP.
 
 ## Features
 
@@ -21,7 +21,7 @@ This implementation provides a working example of a simplified TCP protocol, dem
 
 ## Implementation Details
 
-* **Language:** Python 3
+* **Language:** C 
 * **Transport Layer:** Built on top of UDP for simplicity and to highlight the implementation of TCP features.
 * **Network Emulator:** Designed to be tested with the MahiMahi network emulator to simulate various network conditions.
 * **Sequence/ACK Numbers:** Uses byte-based sequence and acknowledgment numbers for precise tracking of data.
@@ -34,7 +34,7 @@ This implementation provides a working example of a simplified TCP protocol, dem
 1. Compile the code using the provided Makefile: `make`
 2. Start the receiver:  `./rdt_receiver <receiver_port> <output_filename>`
 3. Start the sender: `./rdt_sender <sender_port> <receiver_port> <filename>`
-4. Visualize the CWND: `python plot CWND.csv`  (Note: Ensure you have `matplotlib` installed: `pip install matplotlib`)
+
 
 **Note:**  The receiver must be started *before* the sender.
 
